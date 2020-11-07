@@ -3,9 +3,9 @@ This one is for MBED OS.
 Interrupt driven, with a simple blocking API.
 Written initially for MBED OS 5.
 Tested on a Nucleo STM32F446RE 180 MHz.
-Quite heavy on interrupts: rising and falling edge are read through an
-interrupt for timing, and the DHT 22 communication protocol calls for
-a signal every 28 us at worst. The communication between the ISR and
-the main code is through an MBED queue, so if you're running it on a
-slower MCU, I'm interested to hear from you.
 
+Quite heavy on interrupts: rising and falling edges are read through
+an interrupt for timing, and the DHT 22 communication protocol calls
+for a signal every 28 us at worst. The communication between the ISR
+and the main code is through an MBED queue, so if you're running it on
+a slower MCU, I'm interested to hear from you.
